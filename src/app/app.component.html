@@ -24,10 +24,17 @@
     <h2>38 gameweek spend</h2>
     <p>{{ totalSpend | currency : "GBP" : "symbol" : "1.0-0" }}</p>
   </div>
+</div>
+
+<div>
   <div>
     <h2>38 gameweek profit</h2>
     <p>{{ (totalAmountWon - totalSpend) | currency : "GBP" : "symbol" : "1.0-0" }}</p>
   </div>
+</div>
+
+<div>
+
   <div>
     <h2>Predicted profit</h2>
     <p>
