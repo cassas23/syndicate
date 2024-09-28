@@ -46,6 +46,11 @@ export class AppComponent {
       gameWeek: 6,
       bettor: 'steven',
       amountWon: 309,
+    },
+    {
+      gameWeek: 7,
+      bettor: 'luke',
+      amountWon: 260,
     }
   ];
 
@@ -70,4 +75,14 @@ export class AppComponent {
       return acc;
     }, {});
   }
+
+  get totalSpend(): number {
+    return 38 * 30;
+  }
+
+  get predictedProfit() {
+    const avgWon = this.totalAmountWon / this.bets.length;
+    return avgWon * 38;
+  }
+  
 }

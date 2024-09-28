@@ -13,8 +13,27 @@
     <h2>Profit</h2>
     <p>
       {{ totalAmount | currency : "GBP" : "symbol" : "1.0-0" }} ({{
-        (totalAmount / 3).toFixed(0) | currency : "GBP" : "symbol" : "1.0-0"
-      }})
+      (totalAmount / 3).toFixed(0) | currency : "GBP" : "symbol" : "1.0-0"
+      }} each)
+    </p>
+  </div>
+</div>
+
+<div>
+  <div>
+    <h2>38 gameweek spend</h2>
+    <p>{{ totalSpend | currency : "GBP" : "symbol" : "1.0-0" }}</p>
+  </div>
+  <div>
+    <h2>38 gameweek profit</h2>
+    <p>{{ (totalAmountWon - totalSpend) | currency : "GBP" : "symbol" : "1.0-0" }}</p>
+  </div>
+  <div>
+    <h2>Predicted profit</h2>
+    <p>
+      {{ predictedProfit | currency : "GBP" : "symbol" : "1.0-0" }} ({{
+      (predictedProfit / 3).toFixed(0) | currency : "GBP" : "symbol" : "1.0-0"
+      }} each)
     </p>
   </div>
 </div>
@@ -24,24 +43,27 @@
     <h2>Luke</h2>
     <p>
       {{
-        totalAmountWonByBettor["luke"] | currency : "GBP" : "symbol" : "1.0-0"
+      totalAmountWonByBettor["luke"] | currency : "GBP" : "symbol" : "1.0-0"
       }}
+      ({{(totalAmountWonByBettor["luke"]/totalAmountWon) | percent }})
     </p>
   </div>
   <div>
     <h2>Jamie</h2>
     <p>
       {{
-        totalAmountWonByBettor["jamie"] | currency : "GBP" : "symbol" : "1.0-0"
+      totalAmountWonByBettor["jamie"] | currency : "GBP" : "symbol" : "1.0-0"
       }}
+      ({{(totalAmountWonByBettor["jamie"]/totalAmountWon) | percent }})
     </p>
   </div>
   <div>
     <h2>Steven</h2>
     <p>
       {{
-        totalAmountWonByBettor["steven"] | currency : "GBP" : "symbol" : "1.0-0"
+      totalAmountWonByBettor["steven"] | currency : "GBP" : "symbol" : "1.0-0"
       }}
+      ({{(totalAmountWonByBettor["steven"]/totalAmountWon) | percent }})
     </p>
   </div>
 </div>
