@@ -114,11 +114,16 @@ export class AppComponent {
     },
     {
       gameWeek: 20,
-      bettor: 'steven',
+      bettor: 'jamie',
       amountWon: 0,
     },
     {
       gameWeek: 21,
+      bettor: 'steven',
+      amountWon: 0,
+    },
+    {
+      gameWeek: 22,
       bettor: 'luke',
       amountWon: 0,
     },
