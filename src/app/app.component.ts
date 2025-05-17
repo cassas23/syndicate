@@ -195,7 +195,7 @@ export class AppComponent {
     {
       gameWeek: 36,
       bettor: 'steven',
-      amountWon: 190,
+      amountWon: 0,
     },
     {
       gameWeek: 37,
@@ -210,7 +210,7 @@ export class AppComponent {
     {
       gameWeek: 39,
       bettor: 'steven',
-      amountWon: 190,
+      amountWon: 0,
     },
     {
       gameWeek: 40,
