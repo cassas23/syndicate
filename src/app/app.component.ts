@@ -217,6 +217,11 @@ export class AppComponent {
       bettor: 'luke',
       amountWon: 0,
     },
+    {
+      gameWeek: 41,
+      bettor: 'jamie',
+      amountWon: 0,
+    },
   ];
 
   get totalAmountWon(): number {
@@ -242,12 +247,6 @@ export class AppComponent {
   }
 
   get totalSpend(): number {
-    return 38 * 30;
+    return this.bets.length * 30;
   }
-
-  get predictedProfit() {
-    const avgWon = this.totalAmountWon / this.bets.length;
-    return avgWon * 38;
-  }
-  
 }
