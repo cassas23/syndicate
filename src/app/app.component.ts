@@ -16,7 +16,12 @@ interface Bet {
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  bets: Bet[] = [];
+  bets: Bet[] = [
+    {
+      gameWeek: 1,
+      bettor: 'fidbull',
+      amountWon: 0}
+  ];
 
   get totalAmountWon(): number {
     return this.bets.reduce((acc, bet) => acc + bet.amountWon, 0);
