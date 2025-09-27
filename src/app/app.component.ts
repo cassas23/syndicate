@@ -19,27 +19,27 @@ export class AppComponent {
   bets: Bet[] = [
     {
       gameWeek: 1,
-      bettor: 'Steven',
+      bettor: 'steven',
       amountWon: 0
     },
     {
       gameWeek: 2,
-      bettor: 'Luke',
+      bettor: 'luke',
       amountWon: 0
     },
     {
       gameWeek: 3,
-      bettor: 'Jamie',
+      bettor: 'jamie',
       amountWon: 0
     },
     {
       gameWeek: 4,
-      bettor: 'Steven',
+      bettor: 'steven',
       amountWon: 0
     },
     {
       gameWeek: 5,
-      bettor: 'Luke',
+      bettor: 'luke',
       amountWon: 143.20
     },
   ];
