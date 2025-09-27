@@ -19,8 +19,29 @@ export class AppComponent {
   bets: Bet[] = [
     {
       gameWeek: 1,
-      bettor: 'fidbull',
-      amountWon: 0}
+      bettor: 'Fidbull',
+      amountWon: 0
+    },
+    {
+      gameWeek: 2,
+      bettor: 'Sanj',
+      amountWon: 0
+    },
+    {
+      gameWeek: 3,
+      bettor: 'Trunch',
+      amountWon: 0
+    },
+    {
+      gameWeek: 4,
+      bettor: 'Fidbull',
+      amountWon: 0
+    },
+    {
+      gameWeek: 5,
+      bettor: 'Sanj',
+      amountWon: 143.20
+    },
   ];
 
   get totalAmountWon(): number {
