@@ -42,6 +42,21 @@ export class AppComponent {
       bettor: 'luke',
       amountWon: 143.20
     },
+    {
+      gameWeek: 6,
+      bettor: 'jamie',
+      amountWon: 0
+    },
+    {
+      gameWeek: 7,
+      bettor: 'steven',
+      amountWon: 0
+    },
+    {
+      gameWeek: 8,
+      bettor: 'luke',
+      amountWon: 141.53
+    },
   ];
 
   get totalAmountWon(): number {
