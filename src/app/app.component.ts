@@ -220,7 +220,7 @@ export class AppComponent {
     {
       gameWeek: 41,
       bettor: 'luke',
-      amountWon: 124
+      amountWon: 0
     },
     {
       gameWeek: 42,
